@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Mi primera página completa</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Estudiante HTML">
+    <meta name="description" content="Página de práctica con formularios, imágenes, videos y más etiquetas.">
+</head>
+
+<!-- Fondo con bgcolor -->
+<body bgcolor="lightyellow">
+
+    <!-- Encabezado del sitio -->
+    <header>
+        <h1>🌐 Bienvenidos a Mi Sitio Web</h1>
+        <nav>
+            <a href="#formulario">Formulario</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#tabla">Tabla</a> |
+            <a href="#articulo">Artículo</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Sección de formulario -->
+    <section id="formulario">
+        <h2>📋 Formulario de registro</h2>
+        <form>
+            Nombre: <input type="text" name="nombre" placeholder="Escribe tu nombre"><br><br>
+            Correo: <input type="email" name="correo"><br><br>
+            Edad: <input type="number" name="edad" min="1"><br><br>
+            Fecha de nacimiento: <input type="date" name="fecha"><br><br>
+            Género: 
+            <input type="radio" name="genero" value="M"> Masculino
+            <input type="radio" name="genero" value="F"> Femenino<br><br>
+            Intereses:
+            <input type="checkbox" name="interes" value="deporte"> Deporte
+            <input type="checkbox" name="interes" value="musica"> Música
+            <input type="checkbox" name="interes" value="tecnologia"> Tecnología<br><br>
+            <input type="submit" value="Registrarse">
+        </form>
+        <hr>
+    </section>
+
+    <!-- Sección de multimedia -->
+    <section id="multimedia">
+        <h2>🖼️ Imagen y Video</h2>
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/HTML_element_content_categories.png/960px-HTML_element_content_categories.png?20230730104252" alt="Ejemplo de imagen" width="300">
+            <figcaption>Imagen de ejemplo con descripción.</figcaption>
+        </figure>
+        <a href="https://www.dofus.com">
+        <img src="https://static.ankama.com/dofus/ng/modules/misc/prehome/unity/assets/imgs/breeds/sprite1.png" alt="Logo de Google">
+        </a>
+
+
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+
+        <h3>🎥 Video de YouTube (iframe)</h3>
+        <iframe width="400" height="250" 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+            title="Video de ejemplo en YouTube"
+            frameborder="0" allowfullscreen>
+        </iframe>
+        <hr>
+    </section>
+
+    <!-- Sección con tabla -->
+    <section id="tabla">
+        <h2>📊 Tabla de horarios</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Actividad</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>Estudiar HTML</td>
+                    <td>9:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>Practicar CSS</td>
+                    <td>10:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>Aprender JavaScript</td>
+                    <td>11:00 AM</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <!-- Sección con un artículo -->
+    <section id="articulo">
+        <article>
+            <h2>📰 Artículo de prueba</h2>
+            <p>
+                HTML es el lenguaje base de la web. Aquí hemos aprendido a usar etiquetas para 
+                <mark>formularios</mark>, <mark>multimedia</mark> y estructuras como tablas y artículos.
+            </p>
+            <blockquote>
+                "El HTML es como el esqueleto de una página web."
+            </blockquote>
+        </article>
+        <hr>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 - Sitio web creado por un estudiante de HTML 🚀</p>
+        <address>Contacto: estudiante@ejemplo.com</address>
+    </footer>
+
+</body>
+</html>
